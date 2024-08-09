@@ -28,12 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.Cerrarcaja = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // Cerrarcaja
+            // 
+            this.Cerrarcaja.BackColor = System.Drawing.Color.Red;
+            this.Cerrarcaja.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Cerrarcaja.Location = new System.Drawing.Point(12, 473);
+            this.Cerrarcaja.Name = "Cerrarcaja";
+            this.Cerrarcaja.Size = new System.Drawing.Size(112, 44);
+            this.Cerrarcaja.TabIndex = 0;
+            this.Cerrarcaja.Text = "Cerrar";
+            this.Cerrarcaja.UseVisualStyleBackColor = false;
+            this.Cerrarcaja.Click += new System.EventHandler(this.Cerrarcaja_Click);
+            // 
+            // Caja
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(922, 529);
+            this.Controls.Add(this.Cerrarcaja);
+            this.Name = "Caja";
             this.Text = "Caja";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private Button Cerrarcaja;
     }
 }
