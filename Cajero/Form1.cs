@@ -6,5 +6,29 @@ namespace Cajero
         {
             InitializeComponent();
         }
+
+        private void cajeroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // Validacion de data cajero
+
+
+
+            //
+
+            //Despues de la validacion, continuar a la caja
+
+            Caja menucaja = new Caja();
+            menucaja.WindowState = FormWindowState.Maximized; //pamtalla completa
+            menucaja.FormBorderStyle = FormBorderStyle.None;
+            menucaja.Show();
+
+
+
+        }
     }
 }
